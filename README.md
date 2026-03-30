@@ -13,6 +13,21 @@ Agent onboarding: read [`AGENTS.md`](AGENTS.md) (map + learned prefs), then [`do
 
 Static build: `cd web && npm run build`; serve `web/dist/` with any static host. `phase1.json` is copied into `dist/data/` on build.
 
+### Publishing to GitHub
+
+From the repo root (after `git` is initialized and you have a commit):
+
+1. Create a **new empty repository** on GitHub (no README/license if you already have them locally).
+2. Add the remote and push:
+
+```bash
+git remote add origin https://github.com/YOUR_USER/YOUR_REPO.git
+git branch -M main
+git push -u origin main
+```
+
+Bloomberg **Excel** exports under `data/upload/` stay **ignored** by git (see `.gitignore`); commit the **processed CSV** / **phase1.json** or regenerate after clone per `docs/user-guide.md`.
+
 ### Python deps
 
 ```bash
