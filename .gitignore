@@ -26,3 +26,4 @@ data/processed/bbg_treasury_panel_meta.json
 
 # Cursor local hook state (rules/skills stay tracked)
 .cursor/hooks/state/
+.vercel
