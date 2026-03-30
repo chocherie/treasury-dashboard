@@ -41,6 +41,7 @@ Bloomberg-driven US Treasury research stack: clean BDH exports to a daily panel,
 | `python3 scripts/phase1_build.py` | Panel → `web/public/data/phase1.json` |
 | `cd web && npm install && npm run dev` | Dashboard dev server |
 | `cd web && npm run build` | Production static build → `web/dist/` |
+| `npx vercel@latest deploy --prod` (repo root) | Deploy static site via [`vercel.json`](vercel.json) → [treasury-dashboard-pi.vercel.app](https://treasury-dashboard-pi.vercel.app) |
 | `bombadil test http://localhost:5173 --headless` | UI properties (when Bombadil installed) |
 
 ## How to Work in This Repo

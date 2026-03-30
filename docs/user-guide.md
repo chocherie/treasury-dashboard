@@ -180,6 +180,15 @@ Artifacts go to **`web/dist/`**. Serve that folder with any static file host. Wi
 
 The build includes **`phase1.json`** from `public/data/` as long as it exists before `npm run build`. **Rebuild** after regenerating JSON if you need the new data in `dist/`.
 
+### Vercel (hosted)
+
+This repository ships a root [`vercel.json`](../vercel.json) so Vercel runs `npm install` / `npm run build` under **`web/`** and publishes **`web/dist`**.
+
+- **Git integration:** Import the GitHub repo in [Vercel](https://vercel.com); each push to `main` can trigger a production deploy (enable in Project → Git).
+- **CLI:** From the repo root, `npx vercel@latest deploy --prod` (uses the linked project in `.vercel/`, which is gitignored).
+
+**Example production URL:** [https://treasury-dashboard-pi.vercel.app](https://treasury-dashboard-pi.vercel.app) (your team’s alias may differ after the first link).
+
 ---
 
 ## 8. Using the dashboard

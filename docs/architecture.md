@@ -35,6 +35,7 @@ flowchart LR
 
 ```
 Treasury dashboard/
+├── vercel.json              # Vercel: build web/ → web/dist
 ├── scripts/                 # Python: clean panel, phase1 JSON
 ├── data/
 │   ├── upload/              # Raw Bloomberg Excel (gitignored optional)

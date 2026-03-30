@@ -31,6 +31,8 @@ cd web && npm install && npm run dev
 cd web && npm run build   # output web/dist
 ```
 
+**Hosting:** Root [`vercel.json`](../vercel.json) builds `web/` and publishes `web/dist` (e.g. Vercel Git integration or `npx vercel deploy --prod`).
+
 ## Future
 
 - Filters, composite signal phase, export CSV from UI.

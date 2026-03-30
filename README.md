@@ -28,6 +28,12 @@ git push -u origin main
 
 Bloomberg **Excel** exports under `data/upload/` stay **ignored** by git (see `.gitignore`); commit the **processed CSV** / **phase1.json** or regenerate after clone per `docs/user-guide.md`.
 
+### Deploy on Vercel
+
+The repo includes [`vercel.json`](vercel.json) (install/build in `web/`, output `web/dist`). Connect [chocherie/treasury-dashboard](https://github.com/chocherie/treasury-dashboard) in the Vercel dashboard or run `npx vercel@latest deploy --prod` from the repo root.
+
+**Production URL:** [https://treasury-dashboard-pi.vercel.app](https://treasury-dashboard-pi.vercel.app)
+
 ### Python deps
 
 ```bash

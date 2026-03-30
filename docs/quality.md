@@ -18,7 +18,7 @@
 | Security | N/A | Static read-only dashboard |
 | Observability | F | No structured logging |
 | Performance | B | Panel size modest |
-| CI / Deployment | F | No CI |
+| CI / Deployment | D | Vercel production deploy + GitHub; no CI tests |
 | Documentation | B+ | Scaffold + `docs/user-guide.md` for operators |
 
 ## Known Gaps
@@ -36,3 +36,4 @@
 | 2026-03-23 | All | Initial scaffold grades after Phase 1 build |
 | 2026-03-23 | Signals & backtest, Web | B&H benchmark, causal timing tests, timeline chart + chart-timeline skill |
 | 2026-03-23 | Documentation | Added `docs/user-guide.md` (Bloomberg → UI); README link |
+| 2026-03-30 | Deployment | Vercel + root `vercel.json`; prod alias treasury-dashboard-pi.vercel.app |
