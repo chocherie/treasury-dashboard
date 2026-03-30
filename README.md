@@ -21,7 +21,7 @@ From the repo root (after `git` is initialized and you have a commit):
 2. Add the remote and push:
 
 ```bash
-git remote add origin https://github.com/YOUR_USER/YOUR_REPO.git
+git remote add origin https://github.com/chocherie/treasury-dashboard.git
 git branch -M main
 git push -u origin main
 ```
