@@ -1,0 +1,13 @@
+---
+description: Write all important outputs (plans, specs, reports, analysis) to the project tree, never only in conversation.
+alwaysApply: true
+---
+
+# Write Artifacts to Disk
+
+| Output | Location |
+| :--- | :--- |
+| Execution plan | `docs/plans/active/{name}.md` |
+| Spec | `specs/{system}.md` (+ index in `specs/README.md`) |
+| Analysis / audit | `docs/reports/{name}.md` |
+| Quality / architecture updates | `docs/quality.md`, `docs/architecture.md` |

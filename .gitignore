@@ -1,0 +1,28 @@
+node_modules/
+web/node_modules/
+web/dist/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+
+# Bloomberg raw exports (license/size; keep folder with .gitkeep)
+data/upload/*
+!data/upload/.gitkeep
+
+# Regenerates with machine-specific absolute paths
+data/processed/bbg_treasury_panel_meta.json
+
+# Python / tooling
+.pytest_cache/
+*.egg-info/
+.mypy_cache/
+
+# Editor / local
+*.swp
+.env
+.env.*
+
+# Cursor local hook state (rules/skills stay tracked)
+.cursor/hooks/state/

@@ -1,0 +1,16 @@
+---
+description: Before editing source code, read the relevant spec for context and constraints.
+globs: ["web/src/**", "scripts/**"]
+---
+
+# Read the Spec Before Coding
+
+Before changing `web/src/` or `scripts/`, read the matching spec from `specs/README.md`.
+
+| Code | Spec |
+| :--- | :--- |
+| `scripts/clean_bbg_export.py` | `specs/data-pipeline.md` |
+| `scripts/phase1_build.py` | `specs/signals-backtest.md` |
+| `web/src/**` | `specs/web-dashboard.md` |
+
+If the spec and code disagree, fix the spec or the code immediately — do not silently diverge.

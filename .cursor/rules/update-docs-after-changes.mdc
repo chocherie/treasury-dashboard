@@ -1,0 +1,26 @@
+---
+description: After completing any implementation, update project documentation to reflect what changed.
+alwaysApply: true
+---
+
+# Update Documentation After Every Change
+
+After completing ANY implementation work (feature, bugfix, refactor, or config change), update the relevant project documentation before considering the task done.
+
+## What to Update
+
+1. **`TODO.md`** — Check off completed tasks; update phase status when a phase completes.
+2. **`docs/quality.md`** — Update grades for domains you touched (Data pipeline, Signals & backtest, Web dashboard).
+3. **`specs/README.md`** — Update verification status for affected specs.
+4. **`specs/{system}.md`** — Reconcile spec with code; note deviations in Design Decisions.
+5. **`docs/plans/active/`** — Update ExecPlan progress or move completed plans to `docs/plans/completed/`.
+
+## Domain → spec mapping
+
+| You changed | Update |
+| :--- | :--- |
+| `scripts/clean_bbg_export.py`, `data/processed/` | `specs/data-pipeline.md`, quality row **Data pipeline** |
+| `scripts/phase1_build.py`, `web/public/data/phase1.json` | `specs/signals-backtest.md`, quality row **Signals & backtest** |
+| `web/src/**`, `web/public/**` | `specs/web-dashboard.md`, quality row **Web dashboard** |
+
+**Code changes without doc updates are incomplete work.**
